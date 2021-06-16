@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/seo-and-marketing-18/50/50-512.png" type="image/ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- title記得改自己學號，檔名也是 --->
+    <title>B10956044</title>
+    <style>
+        body {
+            font-family: 'Noto Sans JP';
+        }
+        
+        .navbar {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        
+        .navbar img {
+            width: 80%;
+        }
+        
+        .navbar-nav {
+            margin: auto;
+        }
+        
+        .jumbotron {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            background-image: url('https://i0.wp.com/png.pngtree.com/thumb_back/fh260/back_our/20190625/ourmid/pngtree-minimalistic-blue-honeycomb-technology-background-image_259755.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .jumbotron hr {
+            margin: 5%;
+            height: 0.25rem;
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .teacher {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        
+        .teacher .col-12 {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        
+        .card {
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav區塊 --->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="data:image/png;base64,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">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-bars">選單</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fab fa-youtube">影片集數</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-comment-dots"></i>討論區</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-share-square">分享</i></a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron區塊 --->
+    <div class="jumbotron">
+        <h1 class="display-4">Watch more</h1>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Watch more</a>
+    </div>
+
+
+    <!-- Card區塊 --->
+    <div class="teacher container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://im.marieclaire.com.tw/m800c533h100b0/assets/mc/201907/5D19B5EB10EB71561966059.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">航海王</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://cdn.hk01.com/di/media/images/dw/20201208/413062833123627008058942.jpeg/2OnXRkk69ZAgx9JYlXIMLRy4XO-HWSFnuw1c5rsNXOY?v=w1920" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">進擊的巨人</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/zh/e/e8/%E7%95%B6%E7%94%B7%E4%BA%BA%E6%88%80%E6%84%9B%E6%99%82.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">當男人戀愛時</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/zh/1/17/Godzilla_vs._Kong_poster.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">哥吉拉大戰金剛</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+
+</html>
